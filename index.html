@@ -37,155 +37,341 @@
       <input type="text" class="form-control" id="searchInput" placeholder="Enter your name..." onkeyup="filterTable()">
     </div>
     
-    <!-- Detailed Transactions Table -->
+    <!-- Detailed Transactions Table with Receiver Account Details -->
     <div class="table-container">
       <h2>Detailed Transactions</h2>
-      <table class="table table-bordered table-striped" id="detailedTable">
-        <thead class="table-dark">
-          <tr>
-            <th>Sender</th>
-            <th>Receiver</th>
-            <th>Amount</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Talal</td>
-            <td>Ali</td>
-            <td>330</td>
-          </tr>
-          <tr>
-            <td>Tahir</td>
-            <td>Ali</td>
-            <td>330</td>
-          </tr>
-          <tr>
-            <td>Sherry</td>
-            <td>Uzman</td>
-            <td>210</td>
-          </tr>
-          <tr>
-            <td>Sherry</td>
-            <td>Ali</td>
-            <td>330</td>
-          </tr>
-          <tr>
-            <td>Sherry</td>
-            <td>Dawood</td>
-            <td>610</td>
-          </tr>
-          <tr>
-            <td>Ali</td>
-            <td>Dawood</td>
-            <td>280</td>
-          </tr>
-          <tr>
-            <td>Uzman</td>
-            <td>Ali</td>
-            <td>120</td>
-          </tr>
-          <tr>
-            <td>Uzman</td>
-            <td>Dawood</td>
-            <td>400</td>
-          </tr>
-          <tr>
-            <td>Dawood</td>
-            <td colspan="2" class="text-center no-transactions">No Transactions</td>
-          </tr>
-          <tr>
-            <td>Asad</td>
-            <td>Uzman</td>
-            <td>210</td>
-          </tr>
-          <tr>
-            <td>Asad</td>
-            <td>Ali</td>
-            <td>330</td>
-          </tr>
-          <tr>
-            <td>Asad</td>
-            <td>Dawood</td>
-            <td>610</td>
-          </tr>
-          <tr>
-            <td>Adil</td>
-            <td>Uzman</td>
-            <td>210</td>
-          </tr>
-          <tr>
-            <td>Adil</td>
-            <td>Ali</td>
-            <td>330</td>
-          </tr>
-          <tr>
-            <td>Adil</td>
-            <td>Dawood</td>
-            <td>610</td>
-          </tr>
-          <tr>
-            <td>Muji</td>
-            <td>Uzman</td>
-            <td>210</td>
-          </tr>
-          <tr>
-            <td>Muji</td>
-            <td>Ali</td>
-            <td>330</td>
-          </tr>
-          <tr>
-            <td>Muji</td>
-            <td>Dawood</td>
-            <td>610</td>
-          </tr>
-          <tr>
-            <td>Haris</td>
-            <td>Uzman</td>
-            <td>210</td>
-          </tr>
-          <tr>
-            <td>Haris</td>
-            <td>Ali</td>
-            <td>330</td>
-          </tr>
-          <tr>
-            <td>Haris</td>
-            <td>Dawood</td>
-            <td>610</td>
-          </tr>
-          <tr>
-            <td>Faizan</td>
-            <td>Uzman</td>
-            <td>210</td>
-          </tr>
-          <tr>
-            <td>Faizan</td>
-            <td>Ali</td>
-            <td>330</td>
-          </tr>
-          <tr>
-            <td>Faizan</td>
-            <td>Dawood</td>
-            <td>610</td>
-          </tr>
-          <tr>
-            <td>Abdullah</td>
-            <td>Uzman</td>
-            <td>210</td>
-          </tr>
-          <tr>
-            <td>Abdullah</td>
-            <td>Ali</td>
-            <td>330</td>
-          </tr>
-          <tr>
-            <td>Abdullah</td>
-            <td>Dawood</td>
-            <td>610</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped" id="detailedTable">
+          <thead class="table-dark">
+            <tr>
+              <th>Sender</th>
+              <th>Receiver</th>
+              <th>Amount</th>
+              <th>Receiver Account</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Talal</td>
+              <td>Ali</td>
+              <td>330</td>
+              <td>
+                <div>
+                  <strong>Title:</strong> Muhammad Ali<br>
+                  <strong>Account #:</strong> 03360765170<br>
+                  <strong>Bank:</strong> Sadapay
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Tahir</td>
+              <td>Ali</td>
+              <td>330</td>
+              <td>
+                <div>
+                  <strong>Title:</strong> Muhammad Ali<br>
+                  <strong>Account #:</strong> 03360765170<br>
+                  <strong>Bank:</strong> Sadapay
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Sherry</td>
+              <td>Uzman</td>
+              <td>210</td>
+              <td>
+                <div>
+                  <strong>Title:</strong> Uzman Zahid<br>
+                  <strong>Account #:</strong> 02700110512328<br>
+                  <strong>Bank:</strong> Meezan Bank
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Sherry</td>
+              <td>Ali</td>
+              <td>330</td>
+              <td>
+                <div>
+                  <strong>Title:</strong> Muhammad Ali<br>
+                  <strong>Account #:</strong> 03360765170<br>
+                  <strong>Bank:</strong> Sadapay
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Sherry</td>
+              <td>Dawood</td>
+              <td>610</td>
+              <td>
+                <div>
+                  <strong>Title:</strong> Dawood Usman<br>
+                  <strong>Account #:</strong> 01601007999427<br>
+                  <strong>Bank:</strong> Bank Al Falah
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Ali</td>
+              <td>Dawood</td>
+              <td>280</td>
+              <td>
+                <div>
+                  <strong>Title:</strong> Dawood Usman<br>
+                  <strong>Account #:</strong> 01601007999427<br>
+                  <strong>Bank:</strong> Bank Al Falah
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Uzman</td>
+              <td>Ali</td>
+              <td>120</td>
+              <td>
+                <div>
+                  <strong>Title:</strong> Muhammad Ali<br>
+                  <strong>Account #:</strong> 03360765170<br>
+                  <strong>Bank:</strong> Sadapay
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Uzman</td>
+              <td>Dawood</td>
+              <td>400</td>
+              <td>
+                <div>
+                  <strong>Title:</strong> Dawood Usman<br>
+                  <strong>Account #:</strong> 01601007999427<br>
+                  <strong>Bank:</strong> Bank Al Falah
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Dawood</td>
+              <td colspan="3" class="text-center no-transactions">No Transactions</td>
+            </tr>
+            <tr>
+              <td>Asad</td>
+              <td>Uzman</td>
+              <td>210</td>
+              <td>
+                <div>
+                  <strong>Title:</strong> Uzman Zahid<br>
+                  <strong>Account #:</strong> 02700110512328<br>
+                  <strong>Bank:</strong> Meezan Bank
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Asad</td>
+              <td>Ali</td>
+              <td>330</td>
+              <td>
+                <div>
+                  <strong>Title:</strong> Muhammad Ali<br>
+                  <strong>Account #:</strong> 03360765170<br>
+                  <strong>Bank:</strong> Sadapay
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Asad</td>
+              <td>Dawood</td>
+              <td>610</td>
+              <td>
+                <div>
+                  <strong>Title:</strong> Dawood Usman<br>
+                  <strong>Account #:</strong> 01601007999427<br>
+                  <strong>Bank:</strong> Bank Al Falah
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Adil</td>
+              <td>Uzman</td>
+              <td>210</td>
+              <td>
+                <div>
+                  <strong>Title:</strong> Uzman Zahid<br>
+                  <strong>Account #:</strong> 02700110512328<br>
+                  <strong>Bank:</strong> Meezan Bank
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Adil</td>
+              <td>Ali</td>
+              <td>330</td>
+              <td>
+                <div>
+                  <strong>Title:</strong> Muhammad Ali<br>
+                  <strong>Account #:</strong> 03360765170<br>
+                  <strong>Bank:</strong> Sadapay
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Adil</td>
+              <td>Dawood</td>
+              <td>610</td>
+              <td>
+                <div>
+                  <strong>Title:</strong> Dawood Usman<br>
+                  <strong>Account #:</strong> 01601007999427<br>
+                  <strong>Bank:</strong> Bank Al Falah
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Muji</td>
+              <td>Uzman</td>
+              <td>210</td>
+              <td>
+                <div>
+                  <strong>Title:</strong> Uzman Zahid<br>
+                  <strong>Account #:</strong> 02700110512328<br>
+                  <strong>Bank:</strong> Meezan Bank
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Muji</td>
+              <td>Ali</td>
+              <td>330</td>
+              <td>
+                <div>
+                  <strong>Title:</strong> Muhammad Ali<br>
+                  <strong>Account #:</strong> 03360765170<br>
+                  <strong>Bank:</strong> Sadapay
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Muji</td>
+              <td>Dawood</td>
+              <td>610</td>
+              <td>
+                <div>
+                  <strong>Title:</strong> Dawood Usman<br>
+                  <strong>Account #:</strong> 01601007999427<br>
+                  <strong>Bank:</strong> Bank Al Falah
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Haris</td>
+              <td>Uzman</td>
+              <td>210</td>
+              <td>
+                <div>
+                  <strong>Title:</strong> Uzman Zahid<br>
+                  <strong>Account #:</strong> 02700110512328<br>
+                  <strong>Bank:</strong> Meezan Bank
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Haris</td>
+              <td>Ali</td>
+              <td>330</td>
+              <td>
+                <div>
+                  <strong>Title:</strong> Muhammad Ali<br>
+                  <strong>Account #:</strong> 03360765170<br>
+                  <strong>Bank:</strong> Sadapay
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Haris</td>
+              <td>Dawood</td>
+              <td>610</td>
+              <td>
+                <div>
+                  <strong>Title:</strong> Dawood Usman<br>
+                  <strong>Account #:</strong> 01601007999427<br>
+                  <strong>Bank:</strong> Bank Al Falah
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Faizan</td>
+              <td>Uzman</td>
+              <td>210</td>
+              <td>
+                <div>
+                  <strong>Title:</strong> Uzman Zahid<br>
+                  <strong>Account #:</strong> 02700110512328<br>
+                  <strong>Bank:</strong> Meezan Bank
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Faizan</td>
+              <td>Ali</td>
+              <td>330</td>
+              <td>
+                <div>
+                  <strong>Title:</strong> Muhammad Ali<br>
+                  <strong>Account #:</strong> 03360765170<br>
+                  <strong>Bank:</strong> Sadapay
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Faizan</td>
+              <td>Dawood</td>
+              <td>610</td>
+              <td>
+                <div>
+                  <strong>Title:</strong> Dawood Usman<br>
+                  <strong>Account #:</strong> 01601007999427<br>
+                  <strong>Bank:</strong> Bank Al Falah
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Abdullah</td>
+              <td>Uzman</td>
+              <td>210</td>
+              <td>
+                <div>
+                  <strong>Title:</strong> Uzman Zahid<br>
+                  <strong>Account #:</strong> 02700110512328<br>
+                  <strong>Bank:</strong> Meezan Bank
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Abdullah</td>
+              <td>Ali</td>
+              <td>330</td>
+              <td>
+                <div>
+                  <strong>Title:</strong> Muhammad Ali<br>
+                  <strong>Account #:</strong> 03360765170<br>
+                  <strong>Bank:</strong> Sadapay
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Abdullah</td>
+              <td>Dawood</td>
+              <td>610</td>
+              <td>
+                <div>
+                  <strong>Title:</strong> Dawood Usman<br>
+                  <strong>Account #:</strong> 01601007999427<br>
+                  <strong>Bank:</strong> Bank Al Falah
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
+    
   </div>
   
   <!-- JavaScript for Search Functionality -->
@@ -201,11 +387,7 @@
         const td = tr[i].getElementsByTagName("td")[0]; // Sender column
         if (td) {
           const txtValue = td.textContent || td.innerText;
-          if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            tr[i].style.display = "";
-          } else {
-            tr[i].style.display = "none";
-          }
+          tr[i].style.display = txtValue.toUpperCase().indexOf(filter) > -1 ? "" : "none";
         }
       }
     }
